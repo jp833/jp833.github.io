@@ -1,10 +1,13 @@
 <html>
 
 	<head>
+		<HEAD>
+			<META http-equiv="Content-Script-Type" content="text/javascript">
+		</HEAD>
 		<style>
 			html {
 			  min-height:100%;
-			  background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://jp833.github.io/traveloworld/2.jpg);
+			  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://jp833.github.io/traveloworld/2.jpg);
 			  background-size:cover;
 			  background-repeat: no-repeat;
 			  background-repeat:repeat-x;
@@ -51,21 +54,16 @@
 			}
 			#icon img {
 				color: white;
-				image-rendering: -moz-crisp-edges; /* Firefox */
-				image-rendering: -o-crisp-edges; /* Opera */
-				image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
-				image-rendering: crisp-edges;
-				-ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
-				height: 250px;
-				width: 250px;
-				margin-top: 20px;
+				height: auto;
+				width: 25vw;
+				margin: 3vw;
 
 			}
 			#company p {
-				font-size: 80px;
+				font-size: 10vw;
 			}
 			#comingSoon p {
-				font-size: 60px;
+				font-size: 4vw;
 			}
 			#round {
 				position: absolute;
@@ -73,10 +71,14 @@
 				opacity: .4;
 				z-index: -1;
 			}
+			#round img {
+				width: 100vw;
+				height: auto;
+			}
 		</style>
 	</head>
 	<body>
-	
+		
 		<div id="mainDiv"><div id="round">
 		<img src="https://jp833.github.io/traveloworld/bg.png"></img> </div>
 			<div id="textContainer">
@@ -90,6 +92,8 @@
 			<div id="comingSoon">
 				<p>Coming Soon!</p>
 			</div>
+			
+	
 			</div>
 		</div>
 	</body>
