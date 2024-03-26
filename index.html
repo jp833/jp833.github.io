@@ -4,6 +4,15 @@
 		<HEAD>
 			<META http-equiv="Content-Script-Type" content="text/javascript">
 		</HEAD>
+		<script>
+		    function playRandomSong() {	
+		      var songs = ['1.mp3', '2.mp3'];
+		      var randomIndex = Math.floor(Math.random() * songs.length);
+		      var audio = document.getElementById('audioPlayer');
+		      audio.src = songs[randomIndex];
+		      audio.play();
+		    }
+		  </script>
 		<style>
 			html {
 			  min-height:100%;
@@ -83,5 +92,9 @@
 				<img src="https://jp833.github.io/SB Pic/SB.png"></img>
 			</div>
 		</div>
+		<button onclick="playRandomSong()">Play Random Song</button>
+		  <audio id="audioPlayer" controls>
+		    Your browser does not support the audio element.
+		  </audio>
 	</body>
 </html>
