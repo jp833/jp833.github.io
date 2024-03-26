@@ -81,18 +81,24 @@
 			}
 			#round img {
 			}
+
+			#song {
+				background-color: transparent;
+				border: none;
+			}
 		</style>
 	</head>
 	<body>
 		
 		<div id="mainDiv">
+			<button id="song" onclick="playRandomSong()"></button>
+			  <audio id="audioPlayer" controls>
+			    Your browser does not support the audio element.
+			  </audio>
 			<div id="round">
 				<img src="https://jp833.github.io/SB Pic/SB.png"></img>
 			</div>
 		</div>
-		<button onclick="playRandomSong()">Play Random Song</button>
-		  <audio id="audioPlayer" controls>
-		    Your browser does not support the audio element.
-		  </audio>
+		
 	</body>
 </html>
